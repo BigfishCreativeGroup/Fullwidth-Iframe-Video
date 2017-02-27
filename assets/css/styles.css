@@ -1,0 +1,209 @@
+/************************************************************************/
+/* BASE TEMPLATE STYLES
+/************************************************************************/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: white;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+}
+
+body {
+  background: white;
+  color: #141414;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+section {
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.section_title {
+  padding: 1.5rem 0;
+}
+.section_title h1, .section_title h2, .section_title h3, .section_title h4, .section_title h5, .section_title h6 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.wrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/************************************************************************/
+/* TYPOGRAPHY
+/************************************************************************/
+a {
+  color: #00b4bc;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:visited {
+  color: #00b4bc;
+}
+a:hover {
+  text-decoration: none;
+  color: #00b5bd;
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+p, blockquote {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #141414;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-rendering: optimizelegibility;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+blockquote {
+  border-left: 2px solid #999999;
+  padding-left: 1.8rem;
+  font-style: italic;
+  color: #999999;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+article ul, article ol {
+  font-size: 1.6rem;
+  padding-left: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+article ul li, article ol li {
+  line-height: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+article ul ul, article ul ol, article ol ul, article ol ol {
+  margin-bottom: 0;
+}
+article ul {
+  list-style-type: disc;
+}
+article ol {
+  list-style-type: decimal;
+}
+
+sup {
+  font-size: 0.9rem;
+  position: relative;
+  top: -0.75rem;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+small, .small {
+  font-size: 75%;
+}
+
+/************************************************************************/
+/* PROJECT SAMPLE STYLES
+/************************************************************************/
+.video.full {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video.full iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
